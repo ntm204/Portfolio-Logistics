@@ -1,0 +1,22 @@
+# Dependency directories
+node_modules/
+
+# Build directory
+dist/
+
+# OS metadata
+**/.DS_Store
+Thumbs.db
+
+# Environment variables (giữ bí mật nếu có)
+.env
+.env.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor folders
+.vscode/
+.idea/

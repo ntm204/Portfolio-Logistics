@@ -1,0 +1,19 @@
+{
+  "name": "bumlogi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "html-minifier-terser": "^7.2.0",
+    "javascript-obfuscator": "^5.3.0",
+    "shelljs": "^0.10.0"
+  }
+}
