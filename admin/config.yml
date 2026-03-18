@@ -2,7 +2,7 @@ backend:
   name: github
   repo: ntm204/Portfolio-Logistics
   branch: main
-  base_url: https://YOUR_PROXY_URL.vercel.app # THAY URL PROXY CỦA BẠN VÀO ĐÂY
+  base_url: portfolio-3m3t.vercel.app
   auth_endpoint: auth
 
 media_folder: "assets/images"
