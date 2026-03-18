@@ -6,9 +6,10 @@
 
 <!-- SEO & Social Meta Tags -->
 <title data-i18n="page_title">Phan Thị Hải Yến — Logistics & Supply Chain Portfolio</title>
-<meta name="description" content="Portfolio chuyên nghiệp của Phan Thị Hải Yến - Chuyên gia Logistics & Quản lý chuỗi cung ứng tương lai.">
-<meta property="og:title" content="Phan Thị Hải Yến — Logistics & Supply Chain">
-<meta property="og:description" content="Sinh viên tốt nghiệp loại Giỏi ĐH Thăng Long, chuyên ngành Logistics & QLCCU.">
+<meta name="description" content="Portfolio chuyên nghiệp của Phan Thị Hải Yến - Chuyên gia Logistics & Quản lý chuỗi cung ứng tương lai." data-i18n="page_description" data-i18n-attr="content">
+<meta property="og:title" content="Phan Thị Hải Yến — Logistics & Supply Chain" data-i18n="page_title" data-i18n-attr="content">
+<meta property="og:description" content="Sinh viên tốt nghiệp loại Giỏi ĐH Thăng Long, chuyên ngành Logistics & QLCCU." data-i18n="page_description" data-i18n-attr="content">
+
 <meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +23,7 @@
 <!-- LOADING OVERLAY -->
 <div id="loader">
   <div class="loader-content">
-    <h1 class="loader-name">Phan Thị Hải Yến</h1>
+    <h1 class="loader-name" data-i18n="footer_name">Phan Thị Hải Yến</h1>
     <div class="loader-line"></div>
   </div>
 </div>
@@ -51,12 +52,11 @@
     <div>
       <p class="hero-tag animate-in" data-i18n="hero_tag">Ứng viên mua hàng — Logistics</p>
       <h1 class="animate-in delay-1">
-        Phan Thị<br><em>Hải Yến</em>
+        <span data-i18n="hero_name_1">Phan Thị</span><br>
+        <em data-i18n="hero_name_2">Hải Yến</em>
       </h1>
       <p class="hero-role animate-in delay-2" data-i18n="hero_role">Logistics &amp; Quản lý chuỗi cung ứng</p>
-      <p class="hero-bio animate-in delay-3" data-i18n="hero_bio">
-        Sinh viên tốt nghiệp loại Giỏi ngành Logistics &amp; QLCCU tại ĐH Thăng Long. Có kinh nghiệm thực tế trong đàm phán nhà cung cấp, quản lý đơn hàng và vận hành logistics quốc tế.
-      </p>
+      <div class="hero-bio animate-in delay-3" data-i18n="hero_bio"></div>
       <div class="hero-cta animate-in delay-4">
         <a href="#contact" class="btn btn-primary">
           <svg width="14" height="14"><use href="assets/icons/sprite.svg#mail"></use></svg>
@@ -69,46 +69,38 @@
     <div class="hero-visual animate-in delay-5">
       <div class="stat-card">
         <div>
-          <div class="stat-number">8.5</div>
+          <div class="stat-number" data-i18n="stat_gpa_val">8.5</div>
           <div class="stat-label" data-i18n="stat_gpa_label">GPA / 10</div>
         </div>
-        <div class="stat-desc" data-i18n="stat_gpa_desc">Tốt nghiệp loại <strong>Giỏi</strong> — Đại học Thăng Long, 2025.</div>
+        <div class="stat-desc" data-i18n="stat_gpa_desc"></div>
       </div>
       <div class="stat-card" style="text-align:center;">
-        <div class="stat-number" style="font-size:36px;">755</div>
+        <div class="stat-number" style="font-size:36px;" data-i18n="stat_toeic_val">755</div>
         <div class="stat-label" data-i18n="stat_toeic_label">TOEIC</div>
       </div>
       <div class="stat-card" style="text-align:center;">
-        <div class="stat-number" style="font-size:36px;">8+</div>
+        <div class="stat-number" style="font-size:36px;" data-i18n="stat_exp_val">8+</div>
         <div class="stat-label" data-i18n="stat_exp_label">Tháng thực tập</div>
       </div>
       <div class="stat-card chain-visual">
         <div class="chain-node">
-          <div class="chain-dot">
-            <svg><use href="assets/icons/sprite.svg#supply"></use></svg>
-          </div>
-          <span class="chain-text" data-i18n="chain_supply">Cung<br>cấp</span>
+          <div class="chain-dot"><svg><use href="assets/icons/sprite.svg#supply"></use></svg></div>
+          <span class="chain-text" data-i18n="chain_supply">Cung</span>
         </div>
         <div class="chain-line"></div>
         <div class="chain-node">
-          <div class="chain-dot">
-            <svg><use href="assets/icons/sprite.svg#purchasing"></use></svg>
-          </div>
-          <span class="chain-text" data-i18n="chain_purchasing">Mua<br>hàng</span>
+          <div class="chain-dot"><svg><use href="assets/icons/sprite.svg#purchasing"></use></svg></div>
+          <span class="chain-text" data-i18n="chain_purchasing">Mua hàng</span>
         </div>
         <div class="chain-line"></div>
         <div class="chain-node">
-          <div class="chain-dot">
-            <svg><use href="assets/icons/sprite.svg#warehouse"></use></svg>
-          </div>
-          <span class="chain-text" data-i18n="chain_warehouse">Kho<br>bãi</span>
+          <div class="chain-dot"><svg><use href="assets/icons/sprite.svg#warehouse"></use></svg></div>
+          <span class="chain-text" data-i18n="chain_warehouse">Kho bãi</span>
         </div>
         <div class="chain-line"></div>
         <div class="chain-node">
-          <div class="chain-dot">
-            <svg><use href="assets/icons/sprite.svg#shipping"></use></svg>
-          </div>
-          <span class="chain-text" data-i18n="chain_shipping">Vận<br>chuyển</span>
+          <div class="chain-dot"><svg><use href="assets/icons/sprite.svg#shipping"></use></svg></div>
+          <span class="chain-text" data-i18n="chain_shipping">Vận chuyển</span>
         </div>
       </div>
     </div>
@@ -197,10 +189,10 @@
       <h2 class="section-title" data-i18n="section_certs_title">Chứng chỉ &amp; Công cụ</h2>
     </div>
     <div class="cert-grid">
-      <div class="cert-card"><div class="cert-badge">755</div><div class="cert-name" data-i18n="cert_1_name">TOEIC<br>English</div></div>
-      <div class="cert-card"><div class="cert-badge" style="font-size:28px;">Excel</div><div class="cert-name" data-i18n="cert_2_name">Microsoft Excel</div></div>
-      <div class="cert-card"><div class="cert-badge" style="font-size:28px;">Word</div><div class="cert-name" data-i18n="cert_3_name">Microsoft Word</div></div>
-      <div class="cert-card"><div class="cert-badge" style="font-size:24px; font-family: 'DM Sans'; font-weight:300;">SCM</div><div class="cert-name" data-i18n="cert_4_name">Supply Chain</div></div>
+      <div class="cert-card"><div class="cert-badge" data-i18n="cert_1_badge">755</div><div class="cert-name" data-i18n="cert_1_name">TOEIC English</div></div>
+      <div class="cert-card"><div class="cert-badge" style="font-size:28px;" data-i18n="cert_2_badge">Excel</div><div class="cert-name" data-i18n="cert_2_name">Microsoft Excel</div></div>
+      <div class="cert-card"><div class="cert-badge" style="font-size:28px;" data-i18n="cert_3_badge">Word</div><div class="cert-name" data-i18n="cert_3_name">Microsoft Word</div></div>
+      <div class="cert-card"><div class="cert-badge" style="font-size:24px; font-family: 'DM Sans';" data-i18n="cert_4_badge">SCM</div><div class="cert-name" data-i18n="cert_4_name">Supply Chain</div></div>
     </div>
   </div>
 </section>
@@ -214,12 +206,15 @@
     </div>
     <div class="edu-layout">
       <div class="edu-main">
-        <div class="edu-degree" data-i18n="edu_degree">Logistics &amp; Quản lý<br>Chuỗi cung ứng</div>
+        <div class="edu-degree">
+          <span data-i18n="edu_degree_1">Logistics &amp; Quản lý</span><br>
+          <span data-i18n="edu_degree_2">Chuỗi cung ứng</span>
+        </div>
         <div class="edu-school" data-i18n="edu_school">Trường Đại học Thăng Long</div>
         <div class="edu-stats">
-          <div class="edu-stat-item"><div class="edu-stat-val">8.5</div><div class="edu-stat-lbl" data-i18n="edu_stat_gpa">GPA</div></div>
+          <div class="edu-stat-item"><div class="edu-stat-val" data-i18n="stat_gpa_val">8.5</div><div class="edu-stat-lbl" data-i18n="edu_stat_gpa">GPA</div></div>
           <div class="edu-stat-item"><div class="edu-stat-val" data-i18n="edu_stat_rank_val">Giỏi</div><div class="edu-stat-lbl" data-i18n="edu_stat_rank">Xếp loại</div></div>
-          <div class="edu-stat-item"><div class="edu-stat-val">2025</div><div class="edu-stat-lbl" data-i18n="edu_stat_year">Năm tốt nghiệp</div></div>
+          <div class="edu-stat-item"><div class="edu-stat-val" data-i18n="edu_stat_year_val">2025</div><div class="edu-stat-lbl" data-i18n="edu_stat_year">Năm tốt nghiệp</div></div>
         </div>
       </div>
       <div class="edu-courses" data-i18n="edu_courses_list">
@@ -239,17 +234,23 @@
     <div class="contact-layout">
       <div>
         <p class="contact-intro" data-i18n="contact_intro">Sẵn sàng đóng góp.</p>
-        <p class="contact-note" data-i18n="contact_note">Tôi đang tìm kiếm vị trí phù hợp.</p>
+        <div class="contact-note" data-i18n="contact_note">Tôi đang tìm kiếm vị trí phù hợp.</div>
       </div>
       <div class="contact-items">
-        <a href="tel:0961084980" class="contact-item">
+        <div class="contact-item copy-click" data-i18n="contact_phone_val" data-copy="">
           <div class="contact-icon"><svg><use href="assets/icons/sprite.svg#phone"></use></svg></div>
-          <div><div class="contact-type" data-i18n="contact_label_phone">Điện thoại</div><div class="contact-value">0961 084 980</div></div>
-        </a>
-        <a href="mailto:phanthihaiyen0403@gmail.com" class="contact-item">
+          <div>
+            <div class="contact-type" data-i18n="contact_label_phone">Điện thoại</div>
+            <div class="contact-value" data-i18n="contact_phone_val">0961 084 980</div>
+          </div>
+        </div>
+        <div class="contact-item copy-click" data-i18n="contact_email_val" data-copy="">
           <div class="contact-icon"><svg><use href="assets/icons/sprite.svg#mail"></use></svg></div>
-          <div><div class="contact-type" data-i18n="contact_label_email">Email</div><div class="contact-value">phanthihaiyen0403@gmail.com</div></div>
-        </a>
+          <div>
+            <div class="contact-type" data-i18n="contact_label_email">Email</div>
+            <div class="contact-value" data-i18n="contact_email_val">phanthihaiyen0403@gmail.com</div>
+          </div>
+        </div>
         <div class="contact-item" style="cursor:default;">
           <div class="contact-icon"><svg><use href="assets/icons/sprite.svg#map-pin"></use></svg></div>
           <div><div class="contact-type" data-i18n="contact_label_address">Địa chỉ</div><div class="contact-value" data-i18n="contact_address_val">Hà Nội</div></div>

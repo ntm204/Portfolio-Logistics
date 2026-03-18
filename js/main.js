@@ -86,9 +86,28 @@ const initLoader = () => {
   });
 };
 
+/**
+ * Click to Copy Functionality (Silent)
+ */
+const initCopy = () => {
+  document.addEventListener("click", (e) => {
+    const copyBtn = e.target.closest(".copy-click");
+    if (!copyBtn) return;
+
+    const textToCopy = copyBtn.getAttribute("data-copy");
+    if (!textToCopy) return;
+
+    // Silent copy to clipboard
+    navigator.clipboard.writeText(textToCopy).catch(err => {
+      console.error("Failed to copy: ", err);
+    });
+  });
+};
+
 // Initialize all features on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
   initAnimations();
   initSmoothScroll();
   initLoader();
+  initCopy();
 });

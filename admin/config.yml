@@ -1,0 +1,105 @@
+local_backend: true
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "assets/images"
+
+collections:
+  - name: "translations"
+    label: "QUẢN LÝ NỘI DUNG"
+    files:
+      - name: "vi"
+        label: "Bản Tiếng Việt"
+        file: "locales/vi.json"
+        fields:
+          - { label: "--- CẤU HÌNH SEO ---", name: "grp_seo", widget: "hidden", default: "" }
+          - { label: "Tiêu đề trang (Tab trình duyệt)", name: "page_title", widget: "string" }
+          - { label: "Mô tả SEO (Hiện trên Google/Zalo)", name: "page_description", widget: "text" }
+
+          - { label: "--- THÔNG TIN CHUNG ---", name: "grp_info", widget: "hidden", default: "" }
+          - { label: "Họ và tên đệm", name: "hero_name_1", widget: "string" }
+          - { label: "Tên chính", name: "hero_name_2", widget: "string" }
+          - { label: "Tên Logo", name: "nav_logo", widget: "string" }
+          - { label: "Tên Footer", name: "footer_name", widget: "string" }
+          - { label: "Số điện thoại", name: "contact_phone_val", widget: "string" }
+          - { label: "Email", name: "contact_email_val", widget: "string" }
+          - { label: "Địa chỉ", name: "contact_address_val", widget: "string" }
+
+          - { label: "--- ĐẦU TRANG (HERO) ---", name: "grp_hero", widget: "hidden", default: "" }
+          - { label: "Nhãn trạng thái (vd: Nhân viên Mua hàng)", name: "hero_tag", widget: "string" }
+          - { label: "Vị trí chuyên môn", name: "hero_role", widget: "string" }
+          - { label: "Giới thiệu bản thân", name: "hero_bio", widget: "markdown" }
+
+          - { label: "--- THỐNG KÊ & BIỂU ĐỒ ---", name: "grp_stats", widget: "hidden", default: "" }
+          - { label: "GPA (Số)", name: "stat_gpa_val", widget: "string" }
+          - { label: "Mô tả GPA", name: "stat_gpa_desc", widget: "markdown" }
+          - { label: "Điểm TOEIC", name: "stat_toeic_val", widget: "string" }
+          - { label: "Tháng thực tế", name: "stat_exp_val", widget: "string" }
+          - { label: "Biểu đồ - Nút 1", name: "chain_supply", widget: "string" }
+          - { label: "Biểu đồ - Nút 2", name: "chain_purchasing", widget: "string" }
+          - { label: "Biểu đồ - Nút 3", name: "chain_warehouse", widget: "string" }
+          - { label: "Biểu đồ - Nút 4", name: "chain_shipping", widget: "string" }
+
+          - { label: "--- KINH NGHIỆM ---", name: "grp_exp", widget: "hidden", default: "" }
+          - { label: "Tiêu đề mục", name: "section_exp_title", widget: "string" }
+          - { label: "CÔNG TY 1 - Thời gian", name: "exp_1_period", widget: "string" }
+          - { label: "CÔNG TY 1 - Tên công ty", name: "exp_1_company", widget: "string" }
+          - { label: "CÔNG TY 1 - Vị trí", name: "exp_1_role", widget: "string" }
+          - { label: "CÔNG TY 1 - Nhiệm vụ", name: "exp_1_tasks", widget: "list", field: {label: "Nhiệm vụ", name: "task", widget: "string"} }
+          - { label: "CÔNG TY 2 - Thời gian", name: "exp_2_period", widget: "string" }
+          - { label: "CÔNG TY 2 - Tên công ty", name: "exp_2_company", widget: "string" }
+          - { label: "CÔNG TY 2 - Vị trí", name: "exp_2_role", widget: "string" }
+          - { label: "CÔNG TY 2 - Nhiệm vụ", name: "exp_2_tasks", widget: "list", field: {label: "Nhiệm vụ", name: "task", widget: "string"} }
+
+          - { label: "--- NĂNG LỰC ---", name: "grp_skills", widget: "hidden", default: "" }
+          - { label: "Tiêu đề mục", name: "section_skills_title", widget: "string" }
+          - { label: "Kỹ năng 1 - Tên", name: "skill_1_name", widget: "string" }
+          - { label: "Kỹ năng 1 - Mô tả", name: "skill_1_desc", widget: "text" }
+          - { label: "Kỹ năng 2 - Tên", name: "skill_2_name", widget: "string" }
+          - { label: "Kỹ năng 2 - Mô tả", name: "skill_2_desc", widget: "text" }
+          - { label: "Kỹ năng 3 - Tên", name: "skill_3_name", widget: "string" }
+          - { label: "Kỹ năng 3 - Mô tả", name: "skill_3_desc", widget: "text" }
+          - { label: "Kỹ năng 4 - Tên", name: "skill_4_name", widget: "string" }
+          - { label: "Kỹ năng 4 - Mô tả", name: "skill_4_desc", widget: "text" }
+          - { label: "Kỹ năng 5 - Tên", name: "skill_5_name", widget: "string" }
+          - { label: "Kỹ năng 5 - Mô tả", name: "skill_5_desc", widget: "text" }
+          - { label: "Kỹ năng 6 - Tên", name: "skill_6_name", widget: "string" }
+          - { label: "Kỹ năng 6 - Mô tả", name: "skill_6_desc", widget: "text" }
+
+          - { label: "--- CHỨNG CHỈ ---", name: "grp_certs", widget: "hidden", default: "" }
+          - { label: "Tiêu đề mục", name: "section_certs_title", widget: "string" }
+          - { label: "CC 1 - Badge", name: "cert_1_badge", widget: "string" }
+          - { label: "CC 1 - Tên", name: "cert_1_name", widget: "string" }
+          - { label: "CC 2 - Badge", name: "cert_2_badge", widget: "string" }
+          - { label: "CC 2 - Tên", name: "cert_2_name", widget: "string" }
+          - { label: "CC 3 - Badge", name: "cert_3_badge", widget: "string" }
+          - { label: "CC 3 - Tên", name: "cert_3_name", widget: "string" }
+          - { label: "CC 4 - Badge", name: "cert_4_badge", widget: "string" }
+          - { label: "CC 4 - Tên", name: "cert_4_name", widget: "string" }
+
+          - { label: "--- HỌC VẤN ---", name: "grp_edu", widget: "hidden", default: "" }
+          - { label: "Tiêu đề mục", name: "section_edu_title", widget: "string" }
+          - { label: "Chuyên ngành (Dòng 1)", name: "edu_degree_1", widget: "string" }
+          - { label: "Chuyên ngành (Dòng 2)", name: "edu_degree_2", widget: "string" }
+          - { label: "Trường đại học", name: "edu_school", widget: "string" }
+          - { label: "Xếp loại", name: "edu_stat_rank_val", widget: "string" }
+          - { label: "Năm tốt nghiệp", name: "edu_stat_year_val", widget: "string" }
+          - { label: "Môn học nổi bật", name: "edu_courses_list", widget: "list", field: {label: "Môn học", name: "course", widget: "string"} }
+
+          - { label: "--- LIÊN HỆ ---", name: "grp_contact", widget: "hidden", default: "" }
+          - { label: "Tiêu đề mục", name: "section_contact_title", widget: "string" }
+          - { label: "Câu dẫn nhập", name: "contact_intro", widget: "string" }
+          - { label: "Ghi chú liên hệ", name: "contact_note", widget: "markdown" }
+
+      - name: "en"
+        label: "Bản Tiếng Anh"
+        file: "locales/en.json"
+        fields:
+          - { label: "SEO Title", name: "page_title", widget: "string" }
+          - { label: "SEO Description", name: "page_description", widget: "text" }
+          - { label: "Full Name 1", name: "hero_name_1", widget: "string" }
+          - { label: "Full Name 2", name: "hero_name_2", widget: "string" }
+          - { label: "Hero Bio", name: "hero_bio", widget: "markdown" }
+          - { label: "Contact Note", name: "contact_note", widget: "markdown" }
