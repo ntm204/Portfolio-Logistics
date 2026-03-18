@@ -2,7 +2,7 @@ backend:
   name: github
   repo: ntm204/Portfolio-Logistics
   branch: main
-  base_url: portfolio-3m3t.vercel.app
+  base_url: https://vercel.com/only52hzs-projects/portfolio-3m3t
   auth_endpoint: auth
 
 media_folder: "assets/images"
