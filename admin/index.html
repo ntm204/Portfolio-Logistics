@@ -4,11 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Manager</title>
+    <!-- Đường dẫn tuyệt đối đến config.yml -->
+    <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
     <!-- Script để quản lý đăng nhập local -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-    <!-- Script chính của CMS -->
+...
+
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script>
       // Đảm bảo CMS nhận diện được Identity khi chạy local

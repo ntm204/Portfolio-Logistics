@@ -78,7 +78,10 @@ async function build() {
   console.log('--- Copying Assets, Locales & Admin ---');
   if (fs.existsSync('assets')) shell.cp('-R', 'assets/*', path.join(DIST, 'assets'));
   if (fs.existsSync('locales')) shell.cp('-R', 'locales/*', path.join(DIST, 'locales'));
-  if (fs.existsSync('admin')) shell.cp('-R', 'admin', path.join(DIST, 'admin'));
+  if (fs.existsSync('admin')) {
+    shell.mkdir('-p', path.join(DIST, 'admin'));
+    shell.cp('-R', 'admin/*', path.join(DIST, 'admin'));
+  }
 
   console.log('--- Build Successful! All files optimized in /dist ---');
 }
