@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: ntm204/Portfolio-Logistics
   branch: main
 
 media_folder: "assets/images"
